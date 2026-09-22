@@ -1,10 +1,11 @@
 import random
-game_number = random.randint(1,10)
-print(game_number)
-guess = int(input("Enter a number between 1 and 10: "))
-if guess > game_number: 
-    print("Too High")
-elif guess < game_number:
-    print("Too Low")
-else:
-    print("You Win")
+game_number = random.randint(1,100)
+while(1):
+    guess = int(input("Enter a number between 1 and 100: "))
+    if guess > game_number: 
+        print("Too High")
+    elif guess < game_number:
+        print("Too Low")
+    else:
+        print("You Win")
+        break
